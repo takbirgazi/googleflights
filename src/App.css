@@ -1,0 +1,12 @@
+.no-calendar-icon::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.no-calendar-icon::-moz-calendar-picker-indicator {
+    display: none;
+}
+
+.no-calendar-icon::-ms-clear {
+    display: none;
+}
