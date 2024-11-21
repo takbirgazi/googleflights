@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-const PopularPlace = () => {
+const Flights = () => {
     const [flights, setFlights] = useState([]);
 
     // Access the location object
@@ -39,7 +39,7 @@ const PopularPlace = () => {
     return (
         <div className="max-w-7xl mx-auto p-5">
             <div className="">
-                <h2 className="font-bold text-lg md:text-3xl text-gray-900">Flights</h2>
+                <h2 className="font-bold text-lg md:text-3xl text-gray-900">Flights {fromLocation} To {toLocation}</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-between py-8">
 
@@ -59,4 +59,4 @@ const PopularPlace = () => {
     );
 };
 
-export default PopularPlace;
+export default Flights;
