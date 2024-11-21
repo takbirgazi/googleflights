@@ -15,7 +15,6 @@ const SearchFlights = () => {
     const [showTo, setShowTo] = useState(false);
     const [searchValue, setSearchValue] = useState("new")
 
-    // 2 No API 
     useEffect(() => {
         const url = `https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchAirport?query=${searchValue ? searchValue : "new"}&locale=en-US`;
         const options = {

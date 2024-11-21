@@ -14,7 +14,6 @@ const Flights = () => {
     const toLocation = searchParams.get('toLocation');
     const fightDate = searchParams.get('fightDate');
 
-    // 8 No API
     useEffect(() => {
         const url = `https://sky-scrapper.p.rapidapi.com/api/v1/flights/getPriceCalendar?originSkyId=${fromLocation}&destinationSkyId=${toLocation}&fromDate=${fightDate}&currency=USD`;
         const options = {
@@ -34,7 +33,7 @@ const Flights = () => {
                 }
                 setFlights(data?.data?.flights?.days);
             })
-    }, [])
+    }, [fromLocation, toLocation, fightDate])
 
     return (
         <div className="max-w-7xl mx-auto p-5">
