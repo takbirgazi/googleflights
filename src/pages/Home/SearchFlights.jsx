@@ -21,7 +21,7 @@ const SearchFlights = () => {
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': '99ccc20e2amsha9ae9912521b3d4p1e8ac2jsn744228d8b99e',
+                'x-rapidapi-key': '6d801c5b49msh83ee398ea646c58p11524djsnd9204d85ee4a',
                 'x-rapidapi-host': 'sky-scrapper.p.rapidapi.com'
             }
         };
