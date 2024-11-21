@@ -59,7 +59,7 @@ const SearchFlights = () => {
                             <input onFocus={() => setShowFrom(!showFrom)} name="fromLocation" className="w-full placeholder:text-gray-700 text-gray-900 outline-none px-2 py-3 pl-8 border rounded-md border-gray-700" type="text" value={fromValue} placeholder="From ?" />
                             <ul className={`${showFrom && "hidden"} absolute left-0 right-0 mt-1 bg-white border border-gray-700 rounded-md shadow-md z-30 overflow-hidden`}>
                                 {
-                                    flights.map(flight => <li key={flight?.skyId}
+                                    flights?.map(flight => <li key={flight?.skyId}
                                         onClick={() => {
                                             setFromValue(flight?.skyId);
                                             setShowFrom(!showFrom);

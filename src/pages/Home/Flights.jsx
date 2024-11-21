@@ -43,7 +43,7 @@ const Flights = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-between py-8">
 
                     {
-                        flights.map((flight, ind) => <div key={ind} className="bg-white rounded-md shadow-lg overflow-hidden flex gap-5 items-center border">
+                        flights?.map((flight, ind) => <div key={ind} className="bg-white rounded-md shadow-lg overflow-hidden flex gap-5 items-center border">
                             <div className="flex flex-col p-7 w-full">
                                 <h4 className="font-bold text-lg"> Date: {flight?.day}</h4>
                                 <p className="py-2">Group: {flight?.group}</p>
